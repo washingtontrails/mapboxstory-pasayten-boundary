@@ -4,11 +4,12 @@
     <meta charset='utf-8' />
     <title>Mapbox Storytelling</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
-    <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
     <style>
         body {
             margin:0;
@@ -19,30 +20,11 @@
             color: #0071bc;
         }
         #map {
-            top:0;
-            height: 100vh;
-            width:100vw;
-            position: fixed;
-        }
-        #mapInset {
-            bottom:50px;
-            right:30px;
-            height: 180px;
-            width:250px;
-            max-width:100%;
-            position: fixed;
-            z-index: 1;
-            opacity: 1;
-            transition: opacity 0.5s ease-in-out;
-            pointer-events: none;
-        }
-        #mapInset .mapboxgl-ctrl-bottom-left{
-            display: none;
-        }
-        @media (max-width: 500px) {
-            #mapInset {
-                display: none;
-            }
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -5;
         }
         #header {
             margin: auto;
@@ -50,11 +32,50 @@
             position: relative;
             z-index: 5;
         }
-        #header h1, #header h2, #header p {
-            margin: 0;
-            padding: 2vh 2vw;
-            text-align: center;
-        }
+#header h1 {
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-family: 'Bebas', sans-serif;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+}
+#header h4 {
+    font-family: 'Bebas', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 600px;
+}
+#header p.byline {
+    font-weight: 300;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0.5em auto 0.8em auto;
+}
+#header p {
+    font-family: 'Roboto Light 300', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 1em auto 1em auto;
+}
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+#features .imageCredit {
+  font-size: 0.9em;
+  margin-top: -5px;
+}
         #footer {
             width: 100%;
             min-height: 5vh;
@@ -67,8 +88,9 @@
             z-index: 5;
         }
         #features {
-            padding-top: 10vh;
-            padding-bottom: 10vh;
+  padding-top: 80vh;
+  padding-bottom: 10vh;
+  z-index: 100;
         }
         .hidden {
             visibility: hidden;
@@ -132,14 +154,16 @@
         </style>
 </head>
 <body>
-
+  <div class="container">
+      <video class="fullscreen-video" id="myVideo" autoplay="autoplay" muted loop>
+          <source src="Lost Trails.mp4">
+      </video>
+       </div>
+   </div>
 <div id="map"></div>
-<div id="mapInset"></div>
 <div id="story"></div>
-
 <script src="./config.js"></script>
 <script>
-var initLoad = true;
 var layerTypes = {
     'fill': ['fill-opacity'],
     'line': ['line-opacity'],
@@ -220,6 +244,12 @@ config.chapters.forEach((record, idx) => {
         image.src = record.image;
         chapter.appendChild(image);
     }
+if (record.imageCredit) {
+    var imageCredit = document.createElement('p');
+    imageCredit.classList.add('imageCredit');
+    imageCredit.innerHTML = 'Image credit: ' + record.imageCredit;
+    chapter.appendChild(imageCredit);
+}
 
     if (record.description) {
         var story = document.createElement('p');
@@ -276,26 +306,8 @@ var map = new mapboxgl.Map({
     bearing: config.chapters[0].location.bearing,
     pitch: config.chapters[0].location.pitch,
     interactive: false,
-    transformRequest: transformRequest,
-    projection: config.projection
+    transformRequest: transformRequest
 });
-
-// Create a inset map if enabled in config.js
-if (config.inset) {
- var insetMap = new mapboxgl.Map({
-    container: 'mapInset', // container id
-    style: 'mapbox://styles/mapbox/dark-v10', //hosted style id
-    center: config.chapters[0].location.center,
-    // Hardcode above center value if you want insetMap to be static.
-    zoom: 3, // starting zoom
-    hash: false,
-    interactive: false,
-    attributionControl: false,
-    //Future: Once official mapbox-gl-js has globe view enabled,
-    //insetmap can be a globe with the following parameter.
-    //projection: 'globe'
-  });
-}
 
 if (config.showMarkers) {
     var marker = new mapboxgl.Marker({ color: config.markerColor });
@@ -304,7 +316,6 @@ if (config.showMarkers) {
 
 // instantiate the scrollama
 var scroller = scrollama();
-
 
 map.on("load", function() {
     if (config.use3dTerrain) {
@@ -329,10 +340,6 @@ map.on("load", function() {
         });
     };
 
-    // As the map moves, grab and update bounds in inset map.
-    if (config.inset) {
-    map.on('move', getInsetBounds);
-    }
     // setup the instance, pass callback functions
     scroller
     .setup({
@@ -340,21 +347,11 @@ map.on("load", function() {
         offset: 0.5,
         progress: true
     })
-    .onStepEnter(async response => {
+    .onStepEnter(response => {
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.add('active');
         map[chapter.mapAnimation || 'flyTo'](chapter.location);
-        // Incase you do not want to have a dynamic inset map,
-        // rather want to keep it a static view but still change the
-        // bbox as main map move: comment out the below if section.
-        if (config.inset) {
-          if (chapter.location.zoom < 5) {
-            insetMap.flyTo({center: chapter.location.center, zoom: 0});
-          }
-          else {
-            insetMap.flyTo({center: chapter.location.center, zoom: 3});
-          }
-        }
+
         if (config.showMarkers) {
             marker.setLngLat(chapter.location.center);
         }
@@ -365,10 +362,10 @@ map.on("load", function() {
             window[chapter.callback]();
         }
         if (chapter.rotateAnimation) {
-            map.once('moveend', () => {
+            map.once('moveend', function() {
                 const rotateNumber = map.getBearing();
-                map.rotateTo(rotateNumber + 180, {
-                    duration: 30000, easing: function (t) {
+                map.rotateTo(rotateNumber + 90, {
+                    duration: 24000, easing: function (t) {
                         return t;
                     }
                 });
@@ -383,89 +380,6 @@ map.on("load", function() {
         }
     });
 });
-
-//Helper functions for insetmap
-function getInsetBounds() {
-            let bounds = map.getBounds();
-
-            let boundsJson = {
-                "type": "FeatureCollection",
-                "features": [{
-                    "type": "Feature",
-                    "properties": {},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [
-                            [
-                                [
-                                    bounds._sw.lng,
-                                    bounds._sw.lat
-                                ],
-                                [
-                                    bounds._ne.lng,
-                                    bounds._sw.lat
-                                ],
-                                [
-                                    bounds._ne.lng,
-                                    bounds._ne.lat
-                                ],
-                                [
-                                    bounds._sw.lng,
-                                    bounds._ne.lat
-                                ],
-                                [
-                                    bounds._sw.lng,
-                                    bounds._sw.lat
-                                ]
-                            ]
-                        ]
-                    }
-                }]
-            }
-
-            if (initLoad) {
-                addInsetLayer(boundsJson);
-                initLoad = false;
-            } else {
-                updateInsetLayer(boundsJson);
-            }
-
-        }
-
-function addInsetLayer(bounds) {
-    insetMap.addSource('boundsSource', {
-        'type': 'geojson',
-        'data': bounds
-    });
-
-    insetMap.addLayer({
-        'id': 'boundsLayer',
-        'type': 'fill',
-        'source': 'boundsSource', // reference the data source
-        'layout': {},
-        'paint': {
-            'fill-color': '#fff', // blue color fill
-            'fill-opacity': 0.2
-        }
-    });
-    // // Add a black outline around the polygon.
-    insetMap.addLayer({
-        'id': 'outlineLayer',
-        'type': 'line',
-        'source': 'boundsSource',
-        'layout': {},
-        'paint': {
-            'line-color': '#000',
-            'line-width': 1
-        }
-    });
-}
-
-function updateInsetLayer(bounds) {
-    insetMap.getSource('boundsSource').setData(bounds);
-}
-
-
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
