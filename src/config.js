@@ -8,6 +8,7 @@ var config = {
     title: '',
     logo: '',
     subtitle: '',
+    introVideoURL: 'https://raw.githubusercontent.com/washingtontrails/mapboxstory-pasayten-boundary/main/src/Lost%20Trails.mp4',
     byline: '',
     footer: 'Thank you to our members and volunteers for making this work possible. <a href="https://www.wta.org/losttrails">Learn more about our work on lost trails and get involved at wta.org/losttrails.</a>',
     chapters: [
