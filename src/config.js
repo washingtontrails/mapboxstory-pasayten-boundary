@@ -124,7 +124,7 @@ var config = {
             title: '',
             image: imageRoot + 'Wildfire.jpg',
             imageCredit: 'Rachel Wendling',
-            description: 'The Pasayten offers countless hike opportunities, but a lack of sufficient Forest Service funding alongside catastrophic wildfire damage have left sections of the wilderness nearly impossible to navigate. Bridges have burned away, fallen trees littered the trail — upwards of 1000 in some stretches — while erosion and brush have encroached any memory of the trail corridor.',
+            description: 'The Pasayten offers <a href="https://www.wta.org/go-outside/hikes?region=49aff77512c523f32ae13d889f6969c9&subregion=425fd9e8fd7edb23fc53782f16c2ea05">countless hike opportunities</a>, but a lack of sufficient Forest Service funding alongside catastrophic wildfire damage have left sections of the wilderness nearly impossible to navigate. Bridges have burned away, fallen trees littered the trail — upwards of 1,000 in some stretches — while erosion and brush have encroached any memory of the trail corridor.',
             location: {
               center: [-120.48902, 48.79047],
               zoom: 9.86,
@@ -238,113 +238,7 @@ var config = {
             title: '',
             image: imageRoot + 'Boundary Trail.jpg',
             imageCredit: 'Rachel Wendling',
-            description: 'The backbone of this wilderness is the 80-mile long Boundary Trail — a stunning route spanning the length of the Pasayten and coinciding with the larger Pacific Northwest National Scenic Trail that connects the Rocky Mountains of Montana to the sandy shores of Washington&aposs Coast. When WTA launched our Lost Trails Found campaign in 2017, we knew the Boundary Trail and its many access points would be a priority for our work. The Pasayten is a special place to so many — and we’ve been working on-the-ground and in Congress to ensure its trails remain accessible to those who seek it.',
-            location: {
-              center: [-120.48902, 48.79047],
-              zoom: 9.86,
-              pitch: 0.50,
-              bearing: 0.00
-            },
-            onChapterEnter: [
-              {
-                  layer: 'Pasayten Wilderness',
-                  opacity: 0
-              },
-              {
-                  layer: 'Boundary Trail',
-                  opacity: 1
-              },
-              {
-                  layer: 'Horseshoe Basin',
-                  opacity: 0
-              },
-              {
-                  layer: 'Windy Peak',
-                  opacity: 0
-              },
-              {
-                  layer: 'Chewuch Trail',
-                  opacity: 0
-              },
-              {
-                  layer: 'Andrews Creek',
-                  opacity: 0
-              },
-              {
-                  layer: 'Lake Creek',
-                  opacity: 0
-              },
-              {
-                  layer: 'Larch Creek',
-                  opacity: 0
-              },
-              {
-                  layer: 'Hidden Lakes',
-                  opacity: 0
-              },
-              {
-                  layer: 'Middle Fork',
-                  opacity: 0
-              },
-              {
-                  layer: 'West Fork',
-                  opacity: 0
-              }
-            ],
-            onChapterExit: [
-              {
-                  layer: 'Pasayten Wilderness',
-                  opacity: 0
-              },
-              {
-                  layer: 'Boundary Trail',
-                  opacity: 1
-              },
-              {
-                  layer: 'Horseshoe Basin',
-                  opacity: 0
-              },
-              {
-                  layer: 'Windy Peak',
-                  opacity: 0
-              },
-              {
-                  layer: 'Chewuch Trail',
-                  opacity: 0
-              },
-              {
-                  layer: 'Andrews Creek',
-                  opacity: 0
-              },
-              {
-                  layer: 'Lake Creek',
-                  opacity: 0
-              },
-              {
-                  layer: 'Larch Creek',
-                  opacity: 0
-              },
-              {
-                  layer: 'Hidden Lakes',
-                  opacity: 0
-              },
-              {
-                  layer: 'Middle Fork',
-                  opacity: 0
-              },
-              {
-                  layer: 'West Fork',
-                  opacity: 0
-              }
-            ]
-        },
-        {
-            id: 'boundary2',
-            alignment: '',
-            title: '',
-            image: '',
-            imageCredit: '',
-            description: 'When WTA launched our Lost Trails Found campaign in 2017, we knew the Boundary Trail and its many access points would be a priority for our work. The Pasayten is a special place to so many — and we’ve been working on the ground to ensure its trails remain accessible to those who seek them.',
+            description: 'The backbone of this wilderness is the 80-mile long Boundary Trail — a stunning route <a href="https://www.wta.org/go-hiking/hikes/pacific-northwest-trail-pasayten-traverse">spanning the length of the Pasayten</a> and coinciding with the larger Pacific Northwest National Scenic Trail that connects the Rocky Mountains of Montana to the sandy shores of Washington\'s coast. When WTA launched our <a href="https://www.wta.org/our-work/lost-trails-found">Lost Trails Found campaign</a> in 2017, we knew the Boundary Trail and its many access points would be a priority for our work. The Pasayten is a special place to so many — and we\'ve been working on-the-ground and in Congress to ensure its trails remain accessible to those who seek them.',
             location: {
               center: [-120.48902, 48.79047],
               zoom: 9.86,
@@ -2574,7 +2468,7 @@ var config = {
                        title: '',
                        image: '',
                        imageCredit: '',
-                       description: 'WTA’s Lost Trails Found campaign works to retain and increase access to Washington’s stunning wild places by restoring trails at risk of disappearing. We know the value that places like the Pasayten Wilderness provide and we look forward to continuing our work to save access to these and other lost trails across the state. Follow along with all of our work across the backcountry at wta.org/losttrails and support our work at wta.org/savelostttrails.',
+                       description: 'WTA’s Lost Trails Found campaign works to retain and increase access to Washington’s stunning wild places by restoring trails at risk of disappearing. We know the value that places like the Pasayten Wilderness provide and we look forward to continuing our work to save access to these and other lost trails across the state. Follow along with all of our work across the backcountry at <a href="https://www.wta.org/losttrails">www.wta.org/losttrails</a> and support our work at <a href="https:www.wta.org/savelostttrails">www.wta.org/savelostttrails</a>.',
                        location: {
                          center: [-120.48902, 48.79047],
                          zoom: 9.86,
