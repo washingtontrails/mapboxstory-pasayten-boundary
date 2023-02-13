@@ -18,7 +18,7 @@ var config = {
             title: '',
             image: imageRoot + 'Lesamiz.jpeg',
             imageCredit: 'Rachel Wendling',
-            title: '<b>A rugged, wild place</b>',
+            title: 'A rugged, wild place',
             description: 'Just east of the Cascade crest lies the 531,000-acre Pasayten Wilderness. Spanning from the rolling Okanogan Highlands to the craggy North Cascades Peaks — the Pasayten offers miles of expansive views, rolling tundra, glacier carved peaks and unbeatable backpacking opportunities. The wilderness contains nearly 150 mountain peaks higher than 7,500 feet, over 160 bodies of water and the largest population of lynx in the lower 48.',
             location: {
               center: [-120.48902, 48.79047],
@@ -122,7 +122,7 @@ var config = {
         {
             id: 'pasayten2',
             alignment: 'left',
-            title: '<b>Wildfire Damage Limits Access</b>',
+            title: 'Wildfire Damage Limits Access',
             image: imageRoot + 'Wildfire.jpg',
             imageCredit: 'Rachel Wendling',
             description: 'The Pasayten offers <a href="https://www.wta.org/go-outside/hikes?region=49aff77512c523f32ae13d889f6969c9&subregion=425fd9e8fd7edb23fc53782f16c2ea05">countless hike opportunities</a>, but a lack of sufficient Forest Service funding alongside catastrophic wildfire damage have left sections of the wilderness nearly impossible to navigate. <p>Bridges have burned away, fallen trees litter the trail — upwards of 1,000 in some stretches — while erosion and brush have encroached any memory of the trail corridor.</p>',
@@ -236,7 +236,7 @@ var config = {
         {
             id: 'boundary',
             alignment: '',
-            title: '<b>The Boundary Trail: Backbone of the Pasayten</b>',
+            title: 'The Boundary Trail: Backbone of the Pasayten',
             image: imageRoot + 'Boundary Trail.jpg',
             imageCredit: 'Rachel Wendling',
             description: 'The backbone of this wilderness is the 80-mile long Boundary Trail — a stunning route <a href="https://www.wta.org/go-hiking/hikes/pacific-northwest-trail-pasayten-traverse">spanning the length of the Pasayten</a> and coinciding with the larger Pacific Northwest National Scenic Trail that connects the Rocky Mountains of Montana to the sandy shores of Washington\'s coast. <p>When WTA launched our <a href="https://www.wta.org/our-work/lost-trails-found">Lost Trails Found campaign</a> in 2017, we knew the Boundary Trail and its many access points would be a priority for our work. The Pasayten is a special place to so many — and we\'ve been working on-the-ground and in Congress to ensure its trails remain accessible to those who seek them.</p>',
@@ -448,7 +448,7 @@ var config = {
         {
             id: 'horseshoebasin1',
             alignment: 'left',
-            title: '<b>Horseshoe Basin</b>',
+            title: 'Horseshoe Basin',
             image: imageRoot + 'Horseshoe Basin 1.jpeg',
             imageCredit: '<a href="https://www.wta.org/go-hiking/trip-reports/trip_report.2019-06-17.2005565718">Kris B</a>',
             description: 'Starting at the eastern edge of the Pasayten Wilderness, nearly touching the Canadian border, lies Horseshoe Basin. Higher than 6,000 feet in elevation, Horseshoe Basin is a favorite among both hikers and WTA volunteers who want to soak in the quiet, expansive views and catch sight of elusive bears, moose or bighorn sheep. <p>The first stretch of the trail was hit by the Tripod Fire in 2006, which charred the forest and left the trail tread in disrepair.</p>',
@@ -554,7 +554,7 @@ var config = {
         {
             id: 'horseshoebasin2',
             alignment: 'right',
-            title: '<b>Dirt Work</b>',
+            title: 'Dirt Work',
             image: imageRoot + 'Horseshoe Basin 2.jpg',
             imageCredit: 'Beth Macinko',
             description: 'To improve and maintain access here, WTA hosted <a href="https://www.wta.org/get-involved/volunteer/ways-to-volunteer/bcrt">backcountry trips </a>here from 2017-2019, overhauling many of the drainage structures to better withstand future storms and prevent trail washouts in the area. <p>Our crews installed numerous waterbars, turnpikes, retaining walls and drain dips throughout, all of which work to divert rainwater off the trail surface and keep erosion at bay. Through the burn zone, we cleared dozens of logs and miles of brush to keep the trail corridor open and accessible.</p>',
@@ -661,7 +661,7 @@ var config = {
         {
             id: 'windypeak1',
             alignment: 'left',
-            title: '<b>Windy Peak</b>',
+            title: 'Windy Peak',
             image: imageRoot + 'Windy Peak 1.jpg',
             imageCredit: 'Owen Vogeli',
             description: 'Just a stone’s throw west of Horseshoe is the <a href="https://www.wta.org/go-hiking/hikes/windy-peak">Windy Peak</a> trail; a high-altitude trail with jawdropping views into the Pasayten. The peak itself tops out at 8100 feet, and on a clear day, hikers can see into the entire wilderness and up to Mount Baker. Just like its neighbor to the east, Windy Peak was hit by the 2006 Tripod Fire, so visitors need to tackle blowdowns and rough rocky tread to reach those views.',
@@ -873,7 +873,7 @@ var config = {
         {
             id: 'chewuch1',
             alignment: 'left',
-            title: '<b>Chewuch Trail</b>',
+            title: 'Chewuch Trail',
             image: imageRoot + 'Chewuch 1.jpg',
             imageCredit: 'Owen Vogeli',
             description: 'Many consider the <a href="https://www.wta.org/go-hiking/hikes/chewuch">Chewuch Trail</a> to be the crown jewel of the Pasayten. It creates a perfect lollipop loop with direct access to the remnants of the Tungsten Mine and the iconic Cathedral Amphitheater along the Boundary Trail. <p>In 2003, the Farewell Fire burned nearly all of the trail, leaving just a few pockets of shade and living forest. Nearly 20 years on, the forest is recovering nicely, but dead trees continue to fall, and overenthusiastic brush continues to crowd the trail corridor.</p>',
@@ -980,7 +980,7 @@ var config = {
         {
             id: 'chewuch2',
             alignment: 'right',
-            title: '<b>Maintaining Access</b>',
+            title: 'Maintaining Access',
             image: imageRoot + 'Chewuch 2.jpg',
             imageCredit: 'Zachary Toliver',
             description: 'As a main access point to the heart of the Pasayten, WTA has returned to the Chewuch often. In 2019, we partnered with Northwest Youth Corps to station a crew in the area for 6 weeks who focused extensively on brushing and tread improvements around the Cathedral Driveway turnoff. And in 2021, our <a href="https://www.wta.org/news/signpost/wtas-pro-crew-finishes-up-incredible-season">Lost Trails Found crew</a> spent 8 days backpacking the 44-mile loop with tools in tow and cleared out every last fallen tree from their path — a whopping 447.',
@@ -1086,7 +1086,7 @@ var config = {
         {
             id: 'andrews1',
             alignment: 'left',
-            title: '<b>Andrews Creek</b>',
+            title: 'Andrews Creek',
             image: imageRoot + 'Andrews Creek 1.jpeg',
             imageCredit: 'Rachel Wendling',
             description: 'The Andrews Creek trail is a peakbaggers delight, often used as an access point to summit Remmel, Mountain, Peepsight Mountain, Andrews Peak and more. <p>But hikers and climbers have to traverse nearly 16 miles of burned forest before reaching Spanish Camp — an oasis of green surrounding a quaint Forest Service cabin that was spared from the flames of the Diamond Creek Fire in 2017. Just a 45-min drive north of Winthrop, this remains a popular entry point to the wilderness.</p>',
@@ -1192,7 +1192,7 @@ var config = {
         {
             id: 'andrews2',
             alignment: 'right',
-            title: '<b>Where There\'s A Burn, There are Logs',
+            title: 'Where There\'s A Burn, There are Logs',
             image: imageRoot + 'Andrews Creek 2.jpg',
             description: 'In 2018, WTA and several of our partners ventured out to Andrews Creek to address a multitude of issues. From our base camp at Spanish Camp, WTA’s backcountry volunteer crew logged out the trail south to Andrews Pass and east to the Cathedral junction. We also joined forces with a Forest Service crew to complete a reroute around a large eroded gully. Meanwhile, our friends at Back Country Horsement of Washington, The Pacific Northwest Trail Association and Pacific Crest Trail Associtation worked across southern sections of the trail to rebuild burnt bridges and brush back overgrowth.',
             imageCredit: 'Rachel Wendling',
@@ -1298,7 +1298,7 @@ var config = {
         {
             id: 'lakecreek1',
             alignment: 'left',
-            title: '<b>Lake Creek</b>',
+            title: 'Lake Creek',
             image: imageRoot + 'Lake Creek 1.jpg',
             imageCredit: 'Margot Ferencz',
             description: 'The trail to Lake Creek offers early-season wildflowers amidst the recovery from the devastating 2003 Farewell wildfire. Only a few standing islands of fir trees were left behind, but pioneering penstemon, paintbrush, fireweed and clematis are now filling the gaps. <p>The first five miles to the far end of Black Lake are well-maintained and make for a pleasant day hike or overnight, but beyond that point, it becomes an exercise in skilled route finding as the trail conditions deteriorate quickly.</p>',
@@ -1510,7 +1510,7 @@ var config = {
           {
               id: 'larchcreek1',
               alignment: 'right',
-              title: '<b>Larch Creek</b>',
+              title: 'Larch Creek',
               image: imageRoot + 'Larch Creek 1.jpeg',
               imageCredit: '<a href="https://www.wta.org/go-hiking/trip-reports/tripreport-2007092700">Perry</a>',
               description: 'In 2017, the Larch Creek trail was set ablaze by the devastating Diamond Creek fire. The most desperate need on this trail is tread repair. With such little vegetation remaining, post-fire erosion made the trail dangerous and almost impassible in places.',
@@ -1722,7 +1722,7 @@ var config = {
             {
                 id: 'hiddenlakes1',
                 alignment: 'left',
-                title: '<b>Hidden Lakes</b>',
+                title: 'Hidden Lakes',
                 image: imageRoot + 'Hidden Lakes 1.jpeg',
                 imageCredit: '<a href="https://www.wta.org/go-hiking/trip-reports/trip_report-2020-07-12-5846328585">LooandMoo</a>',
                 description: 'Similar to Larch Creek, the Diamond Creek fire of 2017 swallowed the entire Hidden Lakes trail — burning everything from start to finish. Since the fire, hundreds of new blowdowns cover the trail every year, requiring dedicated annual maintenance to keep up. Although the forest was devastated, the lakes remain an idyllic destination — a series of sparkling blue pools tucked into a valley of ash.',
@@ -1829,7 +1829,7 @@ var config = {
              {
                  id: 'hiddenlakes2',
                  alignment: 'right',
-                 title: '<b>A Record Number of Logs Removed</b>',
+                 title: 'A Record Number of Logs Removed',
                  image: imageRoot + 'Hidden Lakes 2.jpg',
                  imageCredit: 'Ginevra Moore',
                  description: 'In 2022, we hit the trail with back-to-back trips. An early season backcountry response team cleared several hundred downed trees along the first few miles, and a week later, one of our Lost Trails Found crews picked up where they left off. During their 8-day hitch, the Lost Trails Found crew hit a new record of logs removed for WTA — 1,601 in just over a mile of trail.',
@@ -1935,7 +1935,7 @@ var config = {
               {
                   id: 'robinson1',
                   alignment: 'right',
-                  title: '<b>Robinson Creek</b>',
+                  title: 'Robinson Creek',
                   image: imageRoot + 'Robinson Creek 1.jpeg',
                   imageCredit: 'Jill Simmons',
                   description: 'Robinson Creek, also known as the Middle Fork Pasayten River, always makes for a fun visit. From the Robinson Creek cut-off at Harts Pass, hikers meander for 15 miles through river valleys and over Robinson Pass before reaching the historic Pasayten airstrip —  a wide, flat meadow with an idyllic wood cabin. From here, hikers can continue onward to the Boundary Trail or turn around to complete a stunning loop with the lofty Buckskin Ridge Trail. Robinson Creek has been mostly spared from wildfire, so plenty of lush forest views remain.',
@@ -2148,7 +2148,7 @@ var config = {
                 {
                     id: 'westfork1',
                     alignment: 'left',
-                    title: '<b>West Fork Pasayten</b>',
+                    title: 'West Fork Pasayten',
                     image: imageRoot + 'West Fork 1.jpg',
                     imageCredit: 'Toni Voorhies',
                     description: 'The West Fork Pasayten River is the final entry point to the Boundary Trail before the Pacific Crest Trail. Starting from Slate Peak, the West Fork meanders through a deep valley with bursts of meadows for 14 miles before reaching the junction with the Boundary Trail. If it were in better condition, this would be an ideal route for creating long loops with the PCT or Buckskin Ridge — but as is, a severe lack of maintenance has left the route too difficult to complete. Hundreds (if not thousands) of fallen trees block the way.',
@@ -2466,7 +2466,7 @@ var config = {
                    {
                        id: 'conclusion2',
                        alignment: 'center',
-                       title: '<b>Lost Trails Found: Preserving Precious Places</b>',
+                       title: 'Lost Trails Found: Preserving Precious Places',
                        image: '',
                        imageCredit: '',
                        description: 'WTA’s Lost Trails Found campaign works to retain and increase access to Washington’s stunning wild places by restoring trails at risk of disappearing. We understand how hikers value places like the Pasayten Wilderness, and we look forward to continuing our work to save access to these and other lost trails across the state. Follow along with all of our work across the backcountry at <a href="https://www.wta.org/losttrails">www.wta.org/losttrails</a> and support our work at <a href="https:www.wta.org/savelostttrails">www.wta.org/savelostttrails</a>.',
