@@ -18,7 +18,7 @@ var config = {
             title: '',
             image: imageRoot + 'Lesamiz.jpeg',
             imageCredit: 'Rachel Wendling',
-            title: 'A rugged, wild place',
+            title: 'A Rugged, Wild Place',
             description: 'Just east of the Cascade crest lies the 531,000-acre Pasayten Wilderness. Spanning from the rolling Okanogan Highlands to the craggy North Cascades Peaks — the Pasayten offers miles of expansive views, rolling tundra, glacier carved peaks and unbeatable backpacking opportunities. The wilderness contains nearly 150 mountain peaks higher than 7,500 feet, over 160 bodies of water and the largest population of lynx in the lower 48.',
             location: {
               center: [-120.48902, 48.79047],
